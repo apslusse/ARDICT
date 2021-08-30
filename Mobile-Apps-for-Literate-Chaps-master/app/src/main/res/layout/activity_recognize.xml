@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/learnedButton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/recogImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="175dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tale_typed" />
+
+    <EditText
+        android:id="@+id/recogText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@layout/rounded_purple"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="sans-serif-thin"
+        android:padding="15dp"
+        android:paddingBottom="30dp"
+        android:textAlignment="textStart"
+        android:textColor="#FFC107"
+        android:textStyle="bold|italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recogImg"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/moreInfo"
+        android:layout_width="37dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@layout/rounded_yellow"
+        android:clickable="true"
+        android:padding="3dp"
+        android:text='"?"'
+        android:textColor="#3F51B5"
+        android:onClick="moreInfo"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="90dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@layout/rounded_yellow"
+        android:onClick="learnedButtonPressed"
+        android:text="ToggleButton"
+        android:textOff="learn"
+        android:textOn="unlearn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/moreInfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

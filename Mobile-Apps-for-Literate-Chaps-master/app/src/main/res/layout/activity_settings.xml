@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    tools:context=".SettingsActivity">
+
+    <SeekBar
+        android:id="@+id/proficiencySeeker"
+        android:layout_width="321dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@layout/rounded_purple"
+        android:indeterminate="false"
+        android:progressTint="#FFC107"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proficiencyText" />
+
+    <EditText
+        android:id="@+id/proficiencyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@layout/rounded_purple"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="Proficiency Selector"
+        android:textColor="#FFC107"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/proficiencySeeker"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/slangSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@layout/rounded_purple"
+        android:backgroundTint="@color/colorPrimary"
+        android:buttonTint="#FFC107"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:switchPadding="10dp"
+        android:text="Slang"
+        android:textColor="#FFC107"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/proficiencySeeker"
+        app:layout_constraintTop_toBottomOf="@+id/proficiencySeeker" />
+</androidx.constraintlayout.widget.ConstraintLayout>
